@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    font-weight: normal;
+}
+
+body
+{
+    background-color: #000000;
+}
+
+main
+{
+    background-image: url(/jayvi+/assets/imagens/main-baner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 669px;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header nav .logo
+{
+    background-image: url(/jayvi+/assets/logos/logo2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 200px;
+}
+
+header nav .enter
+{
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid white;
+    font-size: 20px;
+    height: 40px;
+    width: 122px;
+    text-align: center;
+    padding-top: 0.2%;
+    transition: 1s;
+}
+
+header nav .enter:hover
+{
+    background-color: white;
+    color: #0C016F;
+}
+
+main .text
+{
+    color: white;
+}
+
+main h1
+{
+    font-size: 64px;
+}
+
+main h3
+{
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+main h4
+{
+    font-size: 20px;
+}
+
+main h4:first-of-type
+{
+    margin-top: 15px;
+}
+
+main .cta
+{
+    color: white;
+    width: 515px;
+    height: 80px;
+    font-size: 30px;
+    background-image: linear-gradient(to right,#0C016F, #030118);
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-top: 60px;
+    display: inline-block;
+    margin-top: 75px;
+    transition: 0.5s;
+    padding-top: 15px;
+}
+
+main .cta:hover
+{
+    transform: scale(1.05);
+}
+
+.linear-bg
+{
+    background-image: linear-gradient(to right, #000000, #060037);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.linear-bg h2
+{
+    color: white;
+    font-size: 48px;
+    margin-top: 85px;
+}
+
+div.bar
+{
+    width: 10px;
+    height: 55px;
+    display: inline-block;
+    background-color: white;
+    margin-left: 2.5px;
+    animation: bar-loading 1s infinite alternate;   
+    margin-top: 75px; 
+}
+
+div.bar:nth-child(2)
+{
+    animation-delay: -0.2s;
+}
+
+div.bar:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+
+.linear-bg a
+{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+
+
+
+@keyframes bar-loading
+{
+    0%{transform: scaleY(0.5);}
+    100%{transform: scaleY(1);}
+}
+
+@media screen and (max-width: 640px)
+{
+    main
+    {
+        background-size: cover;
+        height: 300px;
+    }
+
+    main h1
+    {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    main header .logo
+    {
+        display: none;
+    }
+
+    main h1
+    {
+        font-size: 50px;
+    }
+
+    main h3
+    {
+        font-size: 25px;
+    }
+
+    main h4
+    {
+        font-size: 13px;
+    }
+
+    main .cta
+    {
+        width: 355px;
+        height: 74px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    main .cta
+    {
+        min-width: 100px;
+        width: 250px;
+    }
+}
